@@ -1,0 +1,7 @@
+{
+    "DEPLOYPATH" : "/home/fritado/git/Fritado-Website",  
+    "task" :  {
+      "0" : "index.html",   
+      "1" : "images"     
+    }
+  }

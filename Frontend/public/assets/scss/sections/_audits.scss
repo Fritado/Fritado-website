@@ -1,0 +1,222 @@
+
+/*************************************** Audits ***********************************************************/
+//pagespeed -> mobile / desktop
+.centered-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //padding: 40px; 
+    margin: auto; 
+    width: 100%;
+   // max-width: 800px; 
+   
+    border-radius: 8px; 
+  }
+  
+  .tab {
+    padding: 0 4px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .tab.inactive {
+    background-color: transparent;
+    color: black;
+  }
+  .tab-button {
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    
+  }
+  .bullet-container {
+    display: flex;
+    align-items: center;
+  
+  }
+  .bullet {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+  }
+  
+  
+  .metric-item {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+  }
+  
+  .metric-title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .metric-value {
+    font-size: 18px;
+    font-weight: 500;
+    color: #c00;
+  }
+  
+  .tab-button.active {
+    color: blue;
+    text-decoration: underline;
+    
+  }
+  
+  .tab-button.inactive {
+    text-decoration: none;
+    color: black;
+  }
+  .audit-content-container {
+    border: 1px solid transparent;
+    padding: 0.25rem;
+    border-radius: 5px;
+  }
+  
+  .audit-content-container.border {
+    border-color: #ccc;
+  }
+  
+  .audit-item-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .audit-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .audit-title {
+    margin: 0 10px;
+    font-weight: medium;
+  }
+  
+  .audit-display-value {
+    margin-left: 5px;
+    color: #c00;
+  }
+  /*********************Desktop view *****************************************/
+  .audit-description{
+    font-size:14px;
+  }
+  .page-img {
+    max-width: 100%; 
+   object-fit: cover;
+    border: 1px solid #ddd; 
+    width: 205px;
+    height: 350px;
+  }
+  .bullet-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #0c6;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .bullet-square {
+    width: 10px;
+    height: 10px;
+    background-color: #fa3;
+    margin-right: 10px;
+  }
+  
+  .bullet-triangle {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 10px solid #f33;
+    margin-right: 10px;
+  }
+  .bullet-hollow-circle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(17, 20, 228);
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 10px;
+    display: inline-block; /* Ensures it behaves like the other bullet icons */
+    box-sizing: border-box; /* Ensures the border is included in the element's total width and height */
+  }
+  
+  .toggle-icon {
+    cursor: pointer;
+  }
+  
+  
+  .table-container-pg{
+    width: 100%;
+  }
+  
+  .table-pg {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  .th-pg, .td-pg {
+    padding: 8px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .cell-content {
+    max-width: 200px; /* Adjust this width as needed */
+    position: relative;
+  }
+  
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .tooltip-text {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    border-bottom: 1px dotted #000; /* Optional: underline style for hoverable text */
+  }
+  
+  .tooltip-popup {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 0.875rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip-container:hover .tooltip-popup {
+    visibility: visible;
+    opacity: 1;
+  }
+  

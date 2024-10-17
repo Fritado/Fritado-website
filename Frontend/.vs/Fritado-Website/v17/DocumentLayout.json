@@ -1,0 +1,441 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Fritado\\Fritado-Website\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\Pricing.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\HomeComponents\\Pricing.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\BestServices.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\HomeComponents\\BestServices.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\commonComp\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\commonComp\\Footer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\Navbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\HomeComponents\\Navbar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\commonComp\\Header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\commonComp\\Header.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\pages\\About.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\About.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\BlogDetailsArea.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\BlogDetailsArea.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\NewBlog1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\NewBlog2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog3.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\NewBlog3.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog4.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\NewBlog4.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog5.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\NewBlog5.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog6.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\NewBlog6.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog7.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\NewBlog7.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog8.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\NewBlog8.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\commonComp\\RecentBlog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\commonComp\\RecentBlog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\BlogMenu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\BlogComponents\\BlogMenu.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\pages\\TeamDetails.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\TeamDetails.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\public\\assets\\scss\\global\\_common.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\assets\\scss\\global\\_common.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\pages\\Blog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Blog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\HomeBanner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\HomeComponents\\HomeBanner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\components\\AboutComp\\Faq.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\AboutComp\\Faq.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fritado\\Fritado-Website\\src\\pages\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 255,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Home.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\pages\\Home.js",
+              "RelativeDocumentMoniker": "src\\pages\\Home.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\pages\\Home.js",
+              "RelativeToolTip": "src\\pages\\Home.js",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-04T09:26:14.042Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HomeBanner.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\HomeBanner.js",
+              "RelativeDocumentMoniker": "src\\components\\HomeComponents\\HomeBanner.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\HomeBanner.js",
+              "RelativeToolTip": "src\\components\\HomeComponents\\HomeBanner.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-04T09:10:41.663Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "About.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\pages\\About.js",
+              "RelativeDocumentMoniker": "src\\pages\\About.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\pages\\About.js",
+              "RelativeToolTip": "src\\pages\\About.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-11T14:32:42.336Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Navbar.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\Navbar.js",
+              "RelativeDocumentMoniker": "src\\components\\HomeComponents\\Navbar.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\Navbar.js",
+              "RelativeToolTip": "src\\components\\HomeComponents\\Navbar.js",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAwG8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-11T13:38:37.239Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\App.js",
+              "RelativeDocumentMoniker": "src\\App.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\App.js",
+              "RelativeToolTip": "src\\App.js",
+              "ViewState": "AQIAACkAAAAAAAAAAAAcwC4AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-11T15:07:10.457Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BestServices.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\BestServices.js",
+              "RelativeDocumentMoniker": "src\\components\\HomeComponents\\BestServices.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\BestServices.js",
+              "RelativeToolTip": "src\\components\\HomeComponents\\BestServices.js",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T17:40:32.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Footer.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\commonComp\\Footer.js",
+              "RelativeDocumentMoniker": "src\\components\\commonComp\\Footer.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\commonComp\\Footer.js",
+              "RelativeToolTip": "src\\components\\commonComp\\Footer.js",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEMAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T17:32:19.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Header.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\commonComp\\Header.js",
+              "RelativeDocumentMoniker": "src\\components\\commonComp\\Header.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\commonComp\\Header.js",
+              "RelativeToolTip": "src\\components\\commonComp\\Header.js",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAAwHUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T17:30:06.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NewBlog3.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog3.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\NewBlog3.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog3.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\NewBlog3.js",
+              "ViewState": "AQIAAKgAAAAAAAAAAAAAALcAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T07:21:29.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NewBlog2.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog2.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\NewBlog2.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog2.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\NewBlog2.js",
+              "ViewState": "AQIAALEAAAAAAAAAAAAAALwAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T07:20:54.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pricing.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\Pricing.js",
+              "RelativeDocumentMoniker": "src\\components\\HomeComponents\\Pricing.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\HomeComponents\\Pricing.js",
+              "RelativeToolTip": "src\\components\\HomeComponents\\Pricing.js",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAEkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-11T13:43:19.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NewBlog4.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog4.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\NewBlog4.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog4.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\NewBlog4.js",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAAAH8AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T07:21:57.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NewBlog1.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog1.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\NewBlog1.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog1.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\NewBlog1.js",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAAAKcAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T05:46:27.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BlogDetailsArea.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\BlogDetailsArea.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\BlogDetailsArea.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\BlogDetailsArea.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\BlogDetailsArea.js",
+              "ViewState": "AQIAAAUBAAAAAAAAAAAAAA4BAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T11:51:13.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NewBlog5.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog5.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\NewBlog5.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog5.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\NewBlog5.js",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAAAL0AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T07:22:25.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NewBlog6.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog6.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\NewBlog6.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog6.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\NewBlog6.js",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAIMAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T13:26:44.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NewBlog7.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog7.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\NewBlog7.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog7.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\NewBlog7.js",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAAAK4AAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T07:25:53.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NewBlog8.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog8.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\NewBlog8.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\NewBlog8.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\NewBlog8.js",
+              "ViewState": "AQIAALoAAAAAAAAAAAAAAMgAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T07:26:18.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RecentBlog.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\commonComp\\RecentBlog.js",
+              "RelativeDocumentMoniker": "src\\components\\commonComp\\RecentBlog.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\commonComp\\RecentBlog.js",
+              "RelativeToolTip": "src\\components\\commonComp\\RecentBlog.js",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAJcAAACFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T14:03:18.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BlogMenu.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\BlogMenu.js",
+              "RelativeDocumentMoniker": "src\\components\\BlogComponents\\BlogMenu.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\BlogComponents\\BlogMenu.js",
+              "RelativeToolTip": "src\\components\\BlogComponents\\BlogMenu.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T11:45:41.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TeamDetails.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\pages\\TeamDetails.js",
+              "RelativeDocumentMoniker": "src\\pages\\TeamDetails.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\pages\\TeamDetails.js",
+              "RelativeToolTip": "src\\pages\\TeamDetails.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T07:11:07.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_common.scss",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\public\\assets\\scss\\global\\_common.scss",
+              "RelativeDocumentMoniker": "public\\assets\\scss\\global\\_common.scss",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\public\\assets\\scss\\global\\_common.scss",
+              "RelativeToolTip": "public\\assets\\scss\\global\\_common.scss",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2024-04-12T05:59:05.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Blog.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\pages\\Blog.js",
+              "RelativeDocumentMoniker": "src\\pages\\Blog.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\pages\\Blog.js",
+              "RelativeToolTip": "src\\pages\\Blog.js",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-11T15:04:35.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Faq.js",
+              "DocumentMoniker": "D:\\Fritado\\Fritado-Website\\src\\components\\AboutComp\\Faq.js",
+              "RelativeDocumentMoniker": "src\\components\\AboutComp\\Faq.js",
+              "ToolTip": "D:\\Fritado\\Fritado-Website\\src\\components\\AboutComp\\Faq.js",
+              "RelativeToolTip": "src\\components\\AboutComp\\Faq.js",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-11T14:52:56.789Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 145,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

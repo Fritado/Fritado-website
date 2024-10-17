@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\assets",
+    "\\public\\assets\\scss",
+    "\\public\\assets\\scss\\global",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\Assets",
+    "\\src\\components\\HomeComponents",
+    "\\src\\pages",
+    "\\src\\scripts"
+  ],
+  "SelectedNode": "\\src\\components\\HomeComponents\\Pricing.js",
+  "PreviewInSolutionExplorer": false
+}

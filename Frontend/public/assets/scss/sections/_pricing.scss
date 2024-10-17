@@ -1,0 +1,254 @@
+
+/*----------------------------------------------
+    # pricing style
+----------------------------------------------*/
+.single-pricing-inner {
+	background: #fff;
+	padding: 48px;
+	transition: 0.4s;
+	margin-bottom: 30px;
+	box-shadow: 0px 4.8px 20px rgba(19, 16, 34, 0.1);
+	h2 {
+		transition: 0.4s;
+		sub {
+			font-size: 16px;
+			bottom: 1px;
+		}
+	}
+	h5 {
+		margin-bottom: 32px;
+		transition: 0.4s;
+	}
+	ul {
+		padding: 0;
+		li {
+			list-style: none;
+			color: var(--heading-color);
+			margin-bottom: 15px;
+			transition: 0.4s;
+			i,
+			svg {
+				margin-right: 10px;
+			}
+			&.hide {
+				color: var(--paragraph-color);
+			}
+		}
+	}
+	.btn {
+		margin-top: 28px;
+	}
+	&.price-active,
+	&:hover {
+		background: #F8F9FC;
+		box-shadow: none;
+		.btn {
+			background: var(--main-color);
+			border-color: var(--main-color);
+			color: #fff !important;
+			line-height: 50px;
+		}
+	}
+	&.style-3 {
+		border: 1px solid #E3E3E3;
+		box-shadow: none;
+		h5 {
+			background: #F8F9FC;
+			padding: 12px 20px;
+			display: inline-block;
+			margin-bottom: 32px;
+			transition: 0.4s;
+		}
+		&.price-active,
+		&:hover {
+			background: #4c94af;
+			h2 {
+				color: #fff;
+			}
+			h5 {
+				background: rgba(255,255,255,0.1);
+				color: #fff;
+			}
+			ul {
+				padding: 0;
+				li {
+					color: #fff;
+					i,
+					svg {
+						margin-right: 10px;
+					}
+					&.hide {
+						color: grba(255,255,255,0.1);
+					}
+				}
+			}
+			.btn {
+				background: #fff;
+				color: var(--main-color) !important;
+			}
+		}
+	}
+}
+/*******************************************************************/
+.pricing-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem; 
+  }
+.planCard{
+	max-width: 16.5rem;
+   // margin-right: 1.6rem;
+    margin-bottom: 0;
+	flex: 1;
+  
+  display: flex;
+  flex-direction: column;
+    
+}
+.plan-card-container{
+	height: 100%;
+    border-radius: 1rem;
+    background-color: #d8e1e35e;
+	overflow: hidden; /* Prevent overflow */
+  display: flex;
+  flex-direction: column;
+}
+.planCardWrapper{
+	height: 100%;
+    padding: 2rem 2.4rem;
+    border-radius: inherit;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    flex: 1;
+}
+.planCardHeader{
+	position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8rem;
+    margin-bottom: 1.2rem;
+
+}
+.PlanCard_PriceBlock{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.2rem;
+}
+.PlanCard_planName{
+	font-weight: 800;
+    margin-bottom: 1.2rem;
+}
+.PlanCard_planUseDescription{
+	min-height: 5.4rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+.PlanCard_planCardPrice{
+	display: flex;
+	align-items: flex-end;
+	margin-bottom:1.2rem;
+}
+.PlanCard_optionPrice{
+	padding-top: 1rem;
+	//margin-right: .8rem;
+	display: flex;
+	
+}
+.PlanCard_priceSymbol{
+	margin-right:0.2rem;
+	font-size: 1.2rem;
+
+}
+.PlanCard_mm_yy{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.PlanCard_operationsContainer{
+	border-radius:0.4rem;
+	border:2px solid #0149645e;
+	text-align:center;
+	padding: .8rem;
+}
+.PlanCard_descWrapper{
+	margin-bottom:3rem;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.8rem;
+
+}
+.PlanCard_planFeatures{
+	margin-top: 2rem;
+}
+.PlanCard_planFeature{
+	display: flex;
+	flex-direction: row;
+	gap:5px;
+	align-items: center;
+	margin-bottom:0.8rem;
+}
+.pricing-button{
+	border-radius:0.4rem;
+}
+
+/* Base styles for mobile-first approach */
+.planCard {
+    max-width: 100%; 
+    margin-right: 0; 
+}
+
+.plan-card-container {
+    padding: 1rem; 
+	margin:0 0.8rem;
+}
+
+.planCardWrapper {
+    padding: 1rem; 
+}
+
+.PlanCard_planName, .PlanCard_planUseDescription, .PlanCard_priceSymbol {
+    font-size: 1rem; 
+}
+
+.PlanCard_planCardPrice {
+    flex-direction: column; 
+}
+
+/* Tablet screens */
+@media (min-width: 768px) {
+    .planCard {
+        max-width: 45%;
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .planCard {
+        max-width: 30%; 
+        margin-right: 1rem; 
+    }
+}
+
+/* Large screens and desktops */
+@media (min-width: 1200px) {
+    .planCard {
+        max-width: 22%;
+		margin: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+

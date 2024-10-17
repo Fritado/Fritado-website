@@ -1,0 +1,26 @@
+.admin-login {
+    display: flex;
+background-color: #f2f5f6;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 3rem auto;
+
+
+}
+.login-container{
+    max-width: 876px;
+    border : 2px solid black;
+    padding:1rem;
+
+}
+.login-ip{
+    padding:0.5rem;
+    border-radius: 0.35rem;
+
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
