@@ -40,9 +40,9 @@ padding:1.5rem;
   }
   
   .close-modal-btn {
-    position: absolute;
-    top: 0.75rem;
-    right: -28rem; /* Move the button inside the modal */
+    position:relative;
+     top: -1.2rem;
+    right: -54rem; 
     color: black;
     background: none;
     border: none;

@@ -43,19 +43,18 @@ const BannerFive = () => {
                   Implement SEO to Rank Your Website on Google's First Page for
                   High-Value Keywords
                 </p>
-
-                <Link
-                  className="btn btn-border-base-2"
-                  data-aos="fade-right"
-                  data-aos-delay="450"
-                  data-aos-duration="1500"
-                  to="https://platform.fritado.com/"
-                  target="_"
-                >
-                  <span>Register now </span>
-
-                  <FaPlus />
-                </Link>
+                <div>
+                  <span className="btn-tab btn-base-color solution-register">
+                    <Link
+                      to="https://platform.fritado.com/"
+                      target="_"
+                     className="solution-btn"
+                    >
+                    Register now 
+                    </Link>
+                    {/* <FaPlus /> */}
+                  </span>
+                </div>
                 <div className="d-flex flex-row gap-4 my-3">
                   <div className="d-flex flex-row gap-1 ">
                     <TiTick size={20} color={"#f68120"} />

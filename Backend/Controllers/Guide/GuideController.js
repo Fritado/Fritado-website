@@ -137,7 +137,10 @@ exports.updateGuideById = async (req, res) => {
       ...(Array.isArray(guideKeywords) && { guideKeywords: [...new Set(guideKeywords)] }), // Remove duplicates
       updatedAt: Date.now(), // Always update the timestamp
     };
-
+ // Handle image upload if present
+ if (req.file) {
+  updateData.guideImage = req.file.path; // Path where the image is stored
+}
     const updatedGuide = await Guide.findByIdAndUpdate(guideId, updateData, { new: true });
 
     if (!updatedGuide) {

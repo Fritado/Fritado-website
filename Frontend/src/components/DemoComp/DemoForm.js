@@ -12,8 +12,8 @@ const DemoForm = () => {
     companyName: "",
     phoneno: "",
     countryCode: "",
-    message: "", 
-    formType: "demo", 
+    message: "",
+    formType: "demo",
   });
 
   const handleChange = (e) => {
@@ -36,63 +36,61 @@ const DemoForm = () => {
   };
 
   return (
-    <form className="w-full flex flex-col gap-6" onSubmit={handleSubmit}>
+    <div className="demo-form"> 
+    <form className="flex flex-col demo-query-from" onSubmit={handleSubmit}>
       {/* Form Fields */}
-      <div className="flex flex-col lg:flex-row gap-6">
-        <div className="flex flex-col lg:w-1/2">
-          <input
-            type="text"
-            name="firstname"
-            id="firstname"
-            placeholder="First name"
-            className="p-3 border rounded shadow-sm"
-            onChange={handleChange}
-            value={formData.firstname}
-          />
-        </div>
-        <div className="flex flex-col lg:w-1/2">
-          <input
-            type="text"
-            name="lastname"
-            id="lastname"
-            placeholder="Last name"
-            className="p-3 border rounded shadow-sm"
-            onChange={handleChange}
-            value={formData.lastname}
-          />
-        </div>
+      <div className="flex flex-row gap-2 form-div">
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="First name"
+          className="p-2 rounded"
+          onChange={handleChange}
+          value={formData.firstname}
+        />
+
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Last name"
+          className="p-2 rounded"
+          onChange={handleChange}
+          value={formData.lastname}
+        />
       </div>
 
-      <div className="flex flex-col">
+      <div className="form-div">
         <input
           type="email"
           name="email"
           id="email"
           placeholder="Email"
-          className="p-3 border rounded shadow-sm"
+          className="p-2 rounded"
           onChange={handleChange}
           value={formData.email}
         />
       </div>
 
-      <div className="flex flex-col">
+      <div className="form-div">
         <input
           type="text"
           name="companyName"
           id="companyName"
           placeholder="Company name"
-          className="p-3 border rounded shadow-sm"
+          className="p-2 rounded"
           onChange={handleChange}
           value={formData.companyName}
         />
       </div>
 
-      <div className="flex flex-col">
+      <div className="form-div">
         <div className="flex gap-3">
           <select
             name="countryCode"
             id="countryCode"
-            className="p-3 border rounded shadow-sm w-24"
+            className="p-2 rounded  w-24"
             onChange={handleChange}
             value={formData.countryCode}
           >
@@ -107,7 +105,7 @@ const DemoForm = () => {
             name="phoneno"
             id="phoneno"
             placeholder="Mobile"
-            className="p-3 border rounded shadow-sm flex-grow"
+            className="p-2 rounded"
             onChange={handleChange}
             value={formData.phoneno}
           />
@@ -115,12 +113,12 @@ const DemoForm = () => {
       </div>
 
       {/* Message Field */}
-      <div className="flex flex-col">
+      <div className="form-div">
         <textarea
           name="message"
           id="message"
           placeholder="Your message"
-          className="p-3 border rounded shadow-sm"
+          className="p-2 rounded"
           onChange={handleChange}
           value={formData.message}
           rows={2}
@@ -133,6 +131,7 @@ const DemoForm = () => {
         </button>
       </div>
     </form>
+    </div>
   );
 };
 

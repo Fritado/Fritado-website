@@ -248,7 +248,7 @@
                   position: relative;
                 }
                 &:hover {
-                  background: #061539;
+                  background:#78aec2;
                   a {
                     color: #fff;
                     padding: 10px 20px 10px 30px;
@@ -506,10 +506,7 @@
       margin-bottom: 0;
     }
   }
-  a {
-    margin-left: 15px;
-    color: var(--heading-color);
-  }
+  
   .search-bar-btn {
     margin-top: -22px;
     cursor: pointer;

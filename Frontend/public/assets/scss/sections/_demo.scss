@@ -1,0 +1,30 @@
+.demo-form{
+    background-color: white;
+    padding: 2rem;
+    height: fit-content;
+    border-radius: 8px;
+}
+.demo-container{
+    padding:0 5rem;
+    display: flex;
+    //flex-direction: row;
+    justify-content: center;
+    gap:1.875rem;
+}
+.form-div{
+    margin:0.5rem 0;
+}
+.demo-heading{
+line-height: 3rem;
+}
+.demo-para {
+    text-align: justify;
+    line-height: 1.8rem;
+}
+.demo-list-items{
+    max-width: 15rem;
+    justify-content: space-between;
+}
+.demo-list{
+  list-style-type: disc;
+}

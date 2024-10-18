@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
@@ -7,7 +7,7 @@ import {
   updateGuide,
 } from "../../service/GuideService/GuideService";
 
-const GuideModal = ({ onCloseModal, onGuideSave , guideToEdit }) => {
+const GuideModal = ({ onCloseModal, onGuideSave, guideToEdit }) => {
   const [guideData, setGuideData] = useState({
     guideTopic: "",
     guideCategory: "",
@@ -52,18 +52,14 @@ const GuideModal = ({ onCloseModal, onGuideSave , guideToEdit }) => {
     setGuideData({ ...guideData, guideImage: e.target.files[0] }); // Update guideImage in state
   };
 
-
   const handleSubmit = async (status) => {
     try {
       let newGuide;
       if (guideToEdit) {
-        // Update existing guide
         newGuide = await updateGuide(guideToEdit._id, { ...guideData, status });
       } else {
-        // Save new guide
         newGuide = await saveGuide({ ...guideData, status });
       }
-      console.log("Guide sent to server:", { ...guideData, status });
       onGuideSave(newGuide);
       onCloseModal();
     } catch (error) {
@@ -83,7 +79,9 @@ const GuideModal = ({ onCloseModal, onGuideSave , guideToEdit }) => {
             <IoMdClose size={25} style={{ color: "black" }} />
           </button>
         </div>
-        <h2 className="heading my-3">{guideToEdit ? "Edit Guide" : "Add Guide"}</h2>
+        <h2 className="heading my-3">
+          {guideToEdit ? "Edit Guide" : "Add Guide"}
+        </h2>
         <form
           className="d-flex flex-column gap-3"
           onSubmit={(e) => e.preventDefault()}

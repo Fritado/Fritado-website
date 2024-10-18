@@ -67,9 +67,9 @@ const GuideSetting = () => {
     }
   };
   return (
-    <div className="">
+    <div className="p-4">
       <div className="d-sm-flex d-flex flex-row heading-container">
-        <h1 className="">Guide management</h1>
+        <h1 className="widget-title my-3">Guide management</h1>
       </div>
       <BlogMenu />
       <div className="table-container">

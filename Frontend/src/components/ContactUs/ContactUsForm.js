@@ -40,33 +40,30 @@ const ContactUsForm = () => {
   };
 
   return (
-    <form
-      className="w-full flex flex-col gap-6"
-      onSubmit={handleSubmit(onSubmit)}
-    >
-      <div className="flex flex-col lg:flex-row gap-6">
-        {/* First Name */}
-        <div className="flex flex-col lg:w-1/2">
+    <div className="demo-form">
+      <h1 className="widget-title text-center">Send Us A Message</h1>
+      <form
+        className="flex flex-col demo-query-from mt-2"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <div className="flex flex-row gap-2 form-div">
           <input
             type="text"
             {...register("firstname", { required: "First name is required" })}
             placeholder="Enter First Name"
-            className={`p-3 border rounded shadow-sm ${
+            className={`p-2 rounded ${
               errors.firstname ? "border-red-500" : ""
             }`}
           />
           {errors.firstname && (
             <p className="text-red-500">{errors.firstname.message}</p>
           )}
-        </div>
 
-        {/* Last Name */}
-        <div className="flex flex-col lg:w-1/2">
           <input
             type="text"
             {...register("lastname", { required: "Last name is required" })}
             placeholder="Enter Last Name"
-            className={`p-3 border rounded shadow-sm ${
+            className={`p-2 rounded  ${
               errors.lastname ? "border-red-500" : ""
             }`}
           />
@@ -74,27 +71,28 @@ const ContactUsForm = () => {
             <p className="text-red-500">{errors.lastname.message}</p>
           )}
         </div>
-      </div>
 
-      {/* Email */}
-      <div className="flex flex-col">
-        <input
-          type="email"
-          {...register("email", { required: "Email is required" })}
-          placeholder="Enter Email"
-          className={`p-3 border rounded shadow-sm ${
-            errors.email ? "border-red-500" : ""
-          }`}
-        />
-        {errors.email && <p className="text-red-500">{errors.email.message}</p>}
-      </div>
+        {/* Email */}
+        <div className="form-div">
+          <input
+            type="email"
+            {...register("email", { required: "Email is required" })}
+            placeholder="Enter Email"
+            className={`p-2  rounded  ${errors.email ? "border-red-500" : ""}`}
+          />
+          {errors.email && (
+            <p className="text-red-500">{errors.email.message}</p>
+          )}
+        </div>
 
-      {/* Phone Number */}
-      <div className="flex flex-col">
-        <div className="flex gap-3">
+        {/* Phone Number */}
+        <div className="form-div">
+          <div className="flex gap-3"> 
           <select
-            {...register("dropdown", { required: "Country code is required" })}
-            className={`p-3 border rounded shadow-sm w-24 ${
+            {...register("dropdown", {
+              required: "Country code is required",
+            })}
+            className={`p-2  rounded  w-24 ${
               errors.dropdown ? "border-red-500" : ""
             }`}
           >
@@ -108,43 +106,38 @@ const ContactUsForm = () => {
             type="text"
             {...register("phoneno", { required: "Phone number is required" })}
             placeholder="12345 67890"
-            className={`p-3 border rounded shadow-sm flex-grow ${
-              errors.phoneno ? "border-red-500" : ""
-            }`}
+            className={`p-2 rounded  ${errors.phoneno ? "border-red-500" : ""}`}
           />
           {errors.phoneno && (
             <p className="text-red-500">{errors.phoneno.message}</p>
           )}
+          </div>
         </div>
-      </div>
 
-      {/* Message */}
-      <div className="flex flex-col">
-        <textarea
-          {...register("message", { required: "Message is required" })}
-          cols="30"
-          rows="5"
-          placeholder="Enter Your message here"
-          className={`p-3 border rounded shadow-sm ${
-            errors.message ? "border-red-500" : ""
-          }`}
-        />
-        {errors.message && (
-          <p className="text-red-500">{errors.message.message}</p>
-        )}
-      </div>
+        {/* Message */}
+        <div className="form-div">
+          <textarea
+            {...register("message", { required: "Message is required" })}
+            cols="30"
+            rows="5"
+            placeholder="Enter Your message here"
+            className={`p-2 rounded  ${
+              errors.message ? "border-red-500" : ""
+            }`}
+          />
+          {errors.message && (
+            <p className="text-red-500">{errors.message.message}</p>
+          )}
+        </div>
 
-      {/* Submit Button */}
-      <div className="self-start">
-        <button
-          className="btn-tab btn-base-color"
-        
-          disabled={isSubmitting}
-        >
-          {isSubmitting ? "Sending..." : "Send Message"}
-        </button>
-      </div>
-    </form>
+        {/* Submit Button */}
+        <div className="self-start">
+          <button className="btn-tab btn-base-color" disabled={isSubmitting}>
+            {isSubmitting ? "Sending..." : "Send Message"}
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 

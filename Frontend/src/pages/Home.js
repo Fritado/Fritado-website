@@ -7,6 +7,7 @@ import Clients from "../components/HomeComponents/Clients";
 import Partner from "../components/HomeComponents/Partner";
 import ResearchDevFAQ from "../components/ResearchDevelopment/ResearchDevFAQ";
 import Testimonial from "../components/HomeComponents/Testimonial";
+import LatestBlog from "../components/HomeComponents/LatestBlog";
 
 const HomeFive = () => {
   return (
@@ -29,7 +30,10 @@ const HomeFive = () => {
           <div className="d-flex flex-column justify-content-center align-items-center text-center head-div">
             <h2 className="heading">Why Choose Fritado AI?</h2>
             <div className="title-para">
-              <p>Fritado AI automates your SEO, boosting brand visibility and online revenue.</p>
+              <p>
+                Fritado AI automates your SEO, boosting brand visibility and
+                online revenue.
+              </p>
             </div>
           </div>
           <div>
@@ -40,7 +44,8 @@ const HomeFive = () => {
 
       <Testimonial />
       {/* clients */}
-      
+      <LatestBlog />
+
       <Clients />
 
       {/* Footer Four */}

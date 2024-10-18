@@ -18,8 +18,8 @@ const AdminLogin = () => {
         "http://localhost:4000/api/auth/login",
         { email, password }
       );
-      localStorage.setItem("adminToken", response.data.token); // Store the token
-      navigate("/admin/dashboard"); // Redirect to admin dashboard
+      localStorage.setItem("adminToken", response.data.token); 
+      navigate("/admin/dashboard"); 
     } catch (err) {
       setError("Invalid login credentials");
     }
@@ -32,7 +32,7 @@ const AdminLogin = () => {
       <div className="login-container">
         <div className="brand-logo">
           <img
-            src="assets/img/logo3.png"
+            src="/assets/img/logo3.png"
             alt="logo"
             className="d-flex mx-auto"
           />
@@ -70,7 +70,7 @@ const AdminLogin = () => {
               {!showPassword ? <FaEyeSlash /> : <FaEye />}
             </span>
           </div>
-          <button type="submit" className="">
+          <button className="btn-tab btn-base-color" >
             {!loading ? "SIGN IN" : "PROCESSING..."}
           </button>
         </form>

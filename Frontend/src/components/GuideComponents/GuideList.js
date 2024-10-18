@@ -14,7 +14,7 @@ const GuideList = ({ searchQuery, selectedCategory }) => {
   const getGuides = async () => {
     try {
       const guidesata = await fetchGuides();
-    
+
       setGuide(guidesata);
     } catch (error) {
       console.error("Error fetching guide:", error);
@@ -39,9 +39,8 @@ const GuideList = ({ searchQuery, selectedCategory }) => {
   });
 
   return (
-    <>
-      {/*===================== Blog Area Three start =====================*/}
-      <div className="blog-area pd-top-120 pd-bottom-90">
+
+      <div className="blog-area head-div">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
@@ -84,7 +83,7 @@ const GuideList = ({ searchQuery, selectedCategory }) => {
           </div>
         </div>
       </div>
-    </>
+    
   );
 };
 

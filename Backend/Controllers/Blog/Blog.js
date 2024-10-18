@@ -92,7 +92,7 @@ const getBlogByID = async (req, res) => {
 
 const getLatestBlogs = async (req, res) => {
   try {
-    const blogs = await Blog.find().sort({ createdAt: -1 }).limit(2);
+    const blogs = await Blog.find().sort({ createdAt: -1 }).limit(3);
     
     res.status(200).json({
       message: "Latest blogs fetched successfully",

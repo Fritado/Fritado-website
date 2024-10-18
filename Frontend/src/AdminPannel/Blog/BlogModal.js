@@ -29,12 +29,11 @@ const BlogModal = ({ onCloseModal, onBlogSave, editBlog }) => {
 
   useEffect(() => {
     if (editBlog && Object.keys(editBlog).length > 0) {
-      console.log("editBlog received:", editBlog); // Debugging log
       setBlogData({
         blogTopic: editBlog.blogTopic || "",
         blogCategory: editBlog.blogCategory || "",
         keywords: editBlog.keywords ? editBlog.keywords.join(", ") : "",
-        uploadImage: null, // Keeping upload image as null initially
+        uploadImage: null,
         videoUrl: editBlog.videoUrl || "",
         blogDescription: editBlog.blogDescription || "",
         status: editBlog.status || "Draft",
@@ -47,8 +46,8 @@ const BlogModal = ({ onCloseModal, onBlogSave, editBlog }) => {
       //const newBlog = await saveBlog(blogData, status);
       const updatedBlogData = { ...blogData, status };
       updatedBlogData.keywords = updatedBlogData.keywords
-      .split(",")
-      .map((keyword) => keyword.trim());
+        .split(",")
+        .map((keyword) => keyword.trim());
       let newBlog;
       if (editBlog) {
         // If we're editing, update the blog
@@ -86,15 +85,6 @@ const BlogModal = ({ onCloseModal, onBlogSave, editBlog }) => {
             value={blogData.blogTopic}
             onChange={handleChange}
           />
-
-          {/* <input
-            placeholder="Blog Category"
-            id="blogcategory"
-            className="p-2"
-            name="blogCategory"
-            value={blogData.blogCategory}
-            onChange={handleChange}
-          /> */}
           <select
             id="blogcategory"
             name="blogCategory"

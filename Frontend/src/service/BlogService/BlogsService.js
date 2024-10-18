@@ -77,7 +77,7 @@ export const updateBlog = async (blogId, updatedBlogData) => {
   formData.append("blogDescription", updatedBlogData.blogDescription);
   formData.append("status", updatedBlogData.status);
 
-  console.log("Updating blog with data:", updatedBlogData); 
+  //console.log("Updating blog with data:", updatedBlogData); 
   
   const response = await axios.put(url, formData, {
     headers: {
@@ -85,7 +85,7 @@ export const updateBlog = async (blogId, updatedBlogData) => {
     },
   });
 
-  console.log(response.data, "update");
+  //console.log(response.data, "update");
   return response.data;
 };
 

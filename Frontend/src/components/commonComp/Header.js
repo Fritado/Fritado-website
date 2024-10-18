@@ -72,7 +72,7 @@ const Header = () => {
           </div>
           <div className="logo ml-20">
             <Link to="/">
-              <img src="assets/img/logo3.png" alt="img" />
+              <img src="/assets/img/logo3.png" alt="img" />
             </Link>
           </div>
 
@@ -100,10 +100,9 @@ const Header = () => {
                 <Link to="#" onClick={toggelDropDown}>
                   Resources
                 </Link>
-                
-               
+
                 <ul className={dropDown ? "sub-menu active" : "sub-menu"}>
-              {/* {dropDown && ( <span>
+                  {/* {dropDown && ( <span>
                   <BiSolidUpArrow />
                 </span>)} */}
                   <li className="d-flex flex-row gap-2">
@@ -121,13 +120,10 @@ const Header = () => {
                         <span>
                           Blog
                           <br />
-                          <p>
-                            {" "}
-                            Access popular guides,
-                            <br /> tips & stories about
-                            <br />
-                            automation.
-                          </p>
+                          Access popular guides,
+                          <br /> tips & stories about
+                          <br />
+                          automation.
                         </span>
                       </Link>
                     </div>
@@ -145,10 +141,10 @@ const Header = () => {
                         <MdOutlineLiveHelp size={26} />
                       </span>
                       <span>
-                        Guide
+                        User Guides
                         <br />
-                        Connect with other Makers,
-                        <br /> exchange ideas & tips.
+                        Explore our resources
+                        <br /> and documentation.
                       </span>
                     </Link>
                   </li>
@@ -171,7 +167,6 @@ const Header = () => {
                     </Link>
                   </li>
                 </ul>
-               
               </li>
 
               <li>

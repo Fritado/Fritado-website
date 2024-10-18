@@ -16,35 +16,35 @@ exports.demoFormQuery = async (req, res) => {
       companyName,
       phoneNo: phoneno,
       countryCode,
-      message, // Include the message from frontend
-      formType, // Include the form type (demo/contact)
+      message,
+      formType, 
     });
     await formData.save();
 
     // Send an email
     const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com", // Replace with your company's SMTP host
-      port: 587, // Use port 587 for TLS (or 465 for SSL if required)
-      secure: false, // Set to true if you use port 465
+      host: "smtp.gmail.com", 
+      port: 587,
+      secure: false, 
       auth: {
         user: "anishakumari0423@gmail.com",
         pass: "rcjuxzxcwwfeskir", 
       },
       tls: {
-        rejectUnauthorized: false, // This allows self-signed certificates (use only if necessary)
+        rejectUnauthorized: false,
       },
     });
 
     const mailOptions = {
-      from: `${email}`, // sender address
-      to: "support@fritado.com", // list of receivers
-      subject: formType === "demo" ? "New Demo Request" : "New Contact Inquiry", // Change subject based on form type
+      from: `${email}`,
+      to: "support@fritado.com", 
+      subject: formType === "demo" ? "New Demo Request" : "New Contact Inquiry", 
       text: `A new ${formType} request has been submitted: 
              Name: ${firstname} ${lastname}
              Email: ${email}
              Company Name: ${companyName}
              Phone Number: ${countryCode} ${phoneno}
-             Message: ${message}`, // Include the message
+             Message: ${message}`,
     };
 
     await transporter.sendMail(mailOptions);

@@ -42,77 +42,74 @@ const BlogAreaFive = ({ searchQuery, selectedCategory }) => {
   });
 
   return (
-    <>
-      {/*===================== Blog Area Three start =====================*/}
-      <div className="blog-area pd-top-120 pd-bottom-90">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <div className="section-title">
-                <h2 className="heading text-center">
-                  Discover a World of Sustainable Alternatives
-                </h2>
-              </div>
+    <div className="blog-area head-div">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="section-title">
+              <h2 className="heading text-center">
+                Discover a World of Sustainable Alternatives
+              </h2>
             </div>
           </div>
-          <div className="row">
-            {filteredBlogs.length > 0 ? (
-              filteredBlogs.map((blog) => (
-                <div key={blog._id} className="col-lg-4 col-md-6">
-                  <div className="single-blog-list style-3">
-                    <div className="thumb">
-                      <img
-                        src={`${BASE_IMAGE_URL}/${blog.uploadImage.replace(
-                          "\\",
-                          "/"
-                        )}`}
-                        alt={blog.blogTopic}
-                      />
-                    </div>
-                    <div className="details">
-                      <ul className="blog-meta">
-                        <li className="blog-topic-author">
-                          {blog.publishedBy || "Admin"}
-                        </li>
-                        <li className="blog-topic-date">
-                          <FaCalendarAlt /> {formatDate(blog.createdAt)}
-                        </li>
-                      </ul>
-                      <h5 className="mb-3">
-                        <Link to={`/blog-details/${blog._id}`}>
-                          {getExcerpt(blog.blogTopic || "No Title", 14)}
-                        </Link>
-                      </h5>
+        </div>
+        <div className="row">
+          {filteredBlogs.length > 0 ? (
+            filteredBlogs.map((blog) => (
+              <div key={blog._id} className="col-lg-4 col-md-6">
+                <div className="single-blog-list style-3">
+                  <div className="thumb">
+                    <img
+                      src={`${BASE_IMAGE_URL}/${blog.uploadImage.replace(
+                        "\\",
+                        "/"
+                      )}`}
+                      alt={blog.blogTopic}
+                    />
+                  </div>
+                  <div className="details">
+                    <ul className="blog-meta">
+                      <li className="blog-topic-author">
+                        {blog.publishedBy || "Admin"}
+                      </li>
+                      <li className="blog-topic-date">
+                        <FaCalendarAlt /> {formatDate(blog.createdAt)}
+                      </li>
+                    </ul>
+                    <h5 className="mb-3">
+                      <Link to={`/blog-details/${blog._id}`}>
+                        {getExcerpt(blog.blogTopic || "No Title", 14)}
+                      </Link>
+                    </h5>
 
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: getExcerpt(
-                            blog.blogDescription || "No description available.",
-                            15
-                          ),
-                        }}
-                      />
-                      <div className="text-end pe-2">
-                        <Link
-                          className="read-more-text"
-                          to={`/blog-details/${blog._id}`}
-                        >
-                          Read More
-                        </Link>
-                      </div>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: getExcerpt(
+                          blog.blogDescription || "No description available.",
+                          15
+                        ),
+                      }}
+                    />
+                    <div className="text-end pe-2">
+                      <Link
+                        className="read-more-text"
+                        to={`/blog-details/${blog._id}`}
+                      >
+                        Read More
+                      </Link>
                     </div>
                   </div>
                 </div>
-              ))
-            ) : (
-              <div className="col-12 text-center">
-                <p>No blogs available.</p>
               </div>
-            )}
-          </div>
+            ))
+          ) : (
+            <div className="col-12 text-center">
+              <p>No blogs available.</p>
+            </div>
+          )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

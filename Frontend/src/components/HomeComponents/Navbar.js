@@ -13,13 +13,13 @@ const NavbarFour = () => {
   const menuActive = () => {
     setActive(!active);
   };
-  
+
   const toggelDropDown = () => {
     setDropDown(!dropDown);
- };
+  };
 
   const changeBackground = () => {
-    if (window.scrollY >= 92  || window.innerWidth <= 992) {
+    if (window.scrollY >= 92 || window.innerWidth <= 992) {
       setNavbar(true);
       setLogo("assets/img/logo3.png");
     } else {
@@ -51,10 +51,21 @@ const NavbarFour = () => {
   }, []);
   return (
     <>
-   
       {/* ==================== Navbar Two Start ====================*/}
-      <nav className={navbar ? " li-color navbar navbar-area navbar-expand-lg " : "li-color-before navbar navbar-area navbar-area-3 navbar-expand-lg"}>
-        <div className={navbar? "container nav-container bg-white " :" container nav-container"}>
+      <nav
+        className={
+          navbar
+            ? " li-color navbar navbar-area navbar-expand-lg "
+            : "li-color-before navbar navbar-area navbar-area-3 navbar-expand-lg"
+        }
+      >
+        <div
+          className={
+            navbar
+              ? "container nav-container bg-white "
+              : " container nav-container"
+          }
+        >
           <div className="responsive-mobile-menu">
             <button
               onClick={menuActive}
@@ -76,7 +87,7 @@ const NavbarFour = () => {
               <img src={logo} alt="fritado-logo" />
             </Link>
           </div>
-         
+
           <div
             className={
               active
@@ -89,7 +100,7 @@ const NavbarFour = () => {
               <li className="">
                 <Link to="/">Home</Link>
               </li>
-              
+
               <li className="">
                 <Link to="/solutions">Solutions</Link>
               </li>
@@ -100,10 +111,9 @@ const NavbarFour = () => {
                 <Link to="#" onClick={toggelDropDown}>
                   Resources
                 </Link>
-                
-               
+
                 <ul className={dropDown ? "sub-menu active" : "sub-menu"}>
-              {/* {dropDown && ( <span>
+                  {/* {dropDown && ( <span>
                   <BiSolidUpArrow />
                 </span>)} */}
                   <li className="d-flex flex-row gap-2">
@@ -121,13 +131,10 @@ const NavbarFour = () => {
                         <span>
                           Blog
                           <br />
-                          <p>
-                            {" "}
-                            Access popular guides,
-                            <br /> tips & stories about
-                            <br />
-                            automation.
-                          </p>
+                          Access popular guides,
+                          <br /> tips & stories about
+                          <br />
+                          automation.
                         </span>
                       </Link>
                     </div>
@@ -145,10 +152,10 @@ const NavbarFour = () => {
                         <MdOutlineLiveHelp size={26} />
                       </span>
                       <span>
-                        Guide
+                        User Guides
                         <br />
-                        Connect with other Makers,
-                        <br /> exchange ideas & tips.
+                        Explore our resources
+                        <br /> and documentation.
                       </span>
                     </Link>
                   </li>
@@ -171,7 +178,6 @@ const NavbarFour = () => {
                     </Link>
                   </li>
                 </ul>
-               
               </li>
 
               <li>
@@ -180,12 +186,22 @@ const NavbarFour = () => {
             </ul>
           </div>
           <div className="nav-right-part nav-right-part-desktop align-self-center  ">
-            <Link
+            {/* <Link
               className=" btn btn-base-color border-radius-5 d-flex align-items-center"
-                          to="https://platform.fritado.com/" target="_"
+              to="https://platform.fritado.com/"
+              target="_"
             >
               Go to portal <FaArrowRight className="mt-0 " />
-            </Link>
+            </Link> */}
+            <span className="btn-tab btn-base-color solution-register">
+              <Link
+                to="https://platform.fritado.com/"
+                target="_"
+                className="solution-btn"
+              >
+                Go to portal 
+              </Link>
+            </span>
           </div>
         </div>
       </nav>
