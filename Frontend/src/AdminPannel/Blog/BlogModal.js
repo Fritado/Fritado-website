@@ -43,7 +43,6 @@ const BlogModal = ({ onCloseModal, onBlogSave, editBlog }) => {
 
   const handleSubmit = async (status) => {
     try {
-      //const newBlog = await saveBlog(blogData, status);
       const updatedBlogData = { ...blogData, status };
       updatedBlogData.keywords = updatedBlogData.keywords
         .split(",")

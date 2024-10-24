@@ -1,46 +1,35 @@
 import React from "react";
-import ContactDetailCard from "./ContactDetailCard";
 
 const contactDetails = [
   {
-    icon: "IoLocation",
-    heading: "Address",
-    description1: "Fritado Technologies Private Limited",
-    description2:
-      "No. 8, CMH Road, 2nd Stage, Indiranagar, Bengaluru, Karnataka - 560 038",
-    details: "",
+    heading: "Texas, USA",
+    description1: "25623 Moreleigh Street, Katy, TEXAS 77493 USA",
   },
 
   {
-    icon: "IoCall",
-    heading: "Call us",
-    description1: "Mon - Fri From 10am to 6pm",
-    description2: "",
-    details: "+91 97411 56389",
-  },
-  {
-    icon: "IoMail",
-    heading: "Email",
-    description1: "support@fritado.com",
-    description2: "",
-    details: "",
+    heading: "Bengaluru ,India",
+    description1:
+      "No. 8, CMH Road, 2nd Stage, Indiranagar, Bengaluru, Karnataka - 560 038",
   },
 ];
 
 const ContactDetails = () => {
   return (
-    <div className="contact-page head-div">
-    {contactDetails.map((detail, index) => (
-      <ContactDetailCard
-        key={index}
-        icon={detail.icon}
-        heading={detail.heading}
-        description1={detail.description1}
-        description2={detail.description2}
-        details={detail.details}
-      />
-    ))}
-  </div>
+    <div className="container">
+      <div className=" text-center" style={{margin:"4rem 0 2rem 0"}}>
+        <h2 className="heading">Our Offices</h2>
+      </div>
+      <div className="contact-page ">
+        {contactDetails.map((detail, index) => (
+          <div className="contact-card">
+            <div className="content" key={index}>
+              <h3>{detail.heading}</h3>
+              <p>{detail.description1}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

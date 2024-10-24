@@ -130,7 +130,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      to="/guide"
+                      to="/help-center"
                       className="resource-dropdown d-flex flex-row gap-3"
                     >
                       <span
@@ -141,7 +141,7 @@ const Header = () => {
                         <MdOutlineLiveHelp size={26} />
                       </span>
                       <span>
-                        User Guides
+                      Help Center
                         <br />
                         Explore our resources
                         <br /> and documentation.

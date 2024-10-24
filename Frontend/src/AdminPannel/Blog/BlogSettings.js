@@ -18,7 +18,7 @@ const BlogSettings = () => {
   const handleCloseModal = () => {
     setShowModal(false);
     setTimeout(() => {
-      setEditBlog(null); // Reset after modal is fully closed
+      setEditBlog(null); 
     }, 300);
   };
 
@@ -36,6 +36,7 @@ const BlogSettings = () => {
 
     getBlogs();
   }, []);
+  
   const handleBlogSave = (newBlog) => {
     if (editBlog) {
       // Update the blog in the list if we're editing

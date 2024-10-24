@@ -30,19 +30,20 @@ const FooterFour = () => {
                 <div className="widget widget_contact">
                   <ul className="details">
                     <li className="d-flex position-relative">
-                    <span className="li-icon"> 
-                      <FaMapMarkerAlt size={35} className="sky" />
-                      No. 8, CMH Road, 2nd Stage, Indiranagar, Bengaluru,
-                      Karnataka - 560 038
+                      <span className="li-icon">
+                        <FaMapMarkerAlt className="sky" />
+                        25623 Moreleigh Street, Katy, TEXAS - 77493 USA
                       </span>
                     </li>
                     <li className="mt-3 d-flex position-relative">
-                      <span className="li-icon"> 
-                      <FaPhoneAlt className="sky" /> +(91)-974-1156-389</span>
+                      <span className="li-icon">
+                        <FaPhoneAlt className="sky" /> +(91)-974-1156-389
+                      </span>
                     </li>
                     <li className="mt-2 d-flex position-relative">
-                    <span className="li-icon"> 
-                      <FaEnvelope className="sky" /> support@fritado.com </span>
+                      <span className="li-icon">
+                        <FaEnvelope className="sky" /> support@fritado.com{" "}
+                      </span>
                     </li>
                   </ul>
                   <ul className="social-media mt-4">
@@ -147,9 +148,9 @@ const FooterFour = () => {
                     </Link>
                   </li>
                   <li className="sky">
-                    <Link to="/guide">
+                    <Link to="/help-center">
                       <span className="li-icon">
-                        <FaChevronRight /> User Guide
+                        <FaChevronRight /> Help Center
                       </span>
                     </Link>
                   </li>

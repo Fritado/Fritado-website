@@ -27,7 +27,7 @@ const saveBlog = async (req, res) => {
     } = req.body;
 
     const uploadImage = req.file ? path.join("uploads", req.file.filename) : "";
-    console.log("Uploaded file path:", uploadImage);
+    // console.log("Uploaded file path:", uploadImage);
 
     const newBlog = new Blog({
       blogTopic,

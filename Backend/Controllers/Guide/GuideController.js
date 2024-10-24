@@ -113,53 +113,65 @@ exports.getGuideById = async (req, res) => {
   }
 };
 
+exports.updateGuideById = [
+  upload.single("guideImage"),
+  async (req, res) => {
+    try {
+      const guideId = req.params.id;
+      const {
+        guideTopic,
+        guideCategory,
+        guideKeywords,
+        guideDescription,
+        guideVideo,
+        status,
+      } = req.body;
 
+      // Construct the update object dynamically
+      // const updateData = {
+      //   ...(guideTopic !== undefined && { guideTopic }),
+      //   ...(guideCategory !== undefined && { guideCategory }),
+      //   ...(guideDescription !== undefined && { guideDescription }),
+      //   ...(guideVideo !== undefined && { guideVideo }),
+      //   ...(status !== undefined && { status }),
+      //   ...(Array.isArray(guideKeywords) && {
+      //     guideKeywords: [...new Set(guideKeywords)],
+      //   }), // Remove duplicates
+      //   updatedAt: Date.now(), // Always update the timestamp
+      // };
 
-exports.updateGuideById = async (req, res) => {
-  try {
-    const guideId = req.params.id;
-    const {
-      guideTopic,
-      guideCategory,
-      guideKeywords,
-      guideDescription,
-      guideVideo,
-      status,
-    } = req.body;
+      const updateData = {
+        guideTopic,
+        guideCategory,
+        guideDescription,
+        guideKeywords: guideKeywords.split(",").map((keyword) => keyword.trim()),
+        status,
+      }
+      // Handle image upload if present
+      if (req.file) {
+        updateData.guideImage = req.file.path; // Path where the image is stored
+      }
+      const updatedGuide = await Guide.findByIdAndUpdate(guideId, updateData, {
+        new: true,
+      });
 
-    // Construct the update object dynamically
-    const updateData = {
-      ...(guideTopic !== undefined && { guideTopic }),
-      ...(guideCategory !== undefined && { guideCategory }),
-      ...(guideDescription !== undefined && { guideDescription }),
-      ...(guideVideo !== undefined && { guideVideo }),
-      ...(status !== undefined && { status }),
-      ...(Array.isArray(guideKeywords) && { guideKeywords: [...new Set(guideKeywords)] }), // Remove duplicates
-      updatedAt: Date.now(), // Always update the timestamp
-    };
- // Handle image upload if present
- if (req.file) {
-  updateData.guideImage = req.file.path; // Path where the image is stored
-}
-    const updatedGuide = await Guide.findByIdAndUpdate(guideId, updateData, { new: true });
+      if (!updatedGuide) {
+        return res.status(404).json({ message: "Guide not found" });
+      }
 
-    if (!updatedGuide) {
-      return res.status(404).json({ message: "Guide not found" });
+      res.status(200).json({
+        message: "Guide updated successfully",
+        data: updatedGuide,
+      });
+    } catch (error) {
+      console.error("Error updating guide:", error);
+      res.status(500).json({
+        message: "Server error while updating Guide",
+        error: error.message,
+      });
     }
-
-    res.status(200).json({
-      message: "Guide updated successfully",
-      data: updatedGuide,
-    });
-  } catch (error) {
-    console.error("Error updating guide:", error);
-    res.status(500).json({
-      message: "Server error while updating Guide",
-      error: error.message,
-    });
-  }
-};
-
+  },
+];
 
 // Function to delete guide by ID
 exports.deleteGuideById = async (req, res) => {

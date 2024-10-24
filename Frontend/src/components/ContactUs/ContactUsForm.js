@@ -1,39 +1,112 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import CountryCode from "./CountryCode.json";
 import axios from "axios";
-import { toast } from "react-hot-toast";
-import { DEMO_API_ROUTES } from "../../service/APIURL/Api"; // Adjust the path as needed
+import { DEMO_API_ROUTES } from "../../service/APIURL/Api"; 
 
 const ContactUsForm = () => {
+  const [formStatus, setFormStatus] = useState("");
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredCountries, setFilteredCountries] = useState(CountryCode);
+  const [selectedCountryCode, setSelectedCountryCode] = useState("");
+
+  useEffect(() => {
+    const getCountryCode = async () => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          async (position) => {
+            const { latitude, longitude } = position.coords;
+
+            try {
+              const response = await axios.get(
+                `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
+              );
+
+              const countryCode = response.data.countryCode; // Extract country code
+              console.log("Fetched country code:", countryCode); // Debug log
+
+              // Find the corresponding country object in your CountryCode array
+              const countryObj = CountryCode.find(
+                (element) => element.code === countryCode
+              );
+
+              if (countryObj) {
+                setValue("dropdown", countryObj.code); // Set the dropdown value
+                setSelectedCountryCode(countryObj.code); // Set selected country code for input
+              } else {
+                console.warn(
+                  "Country code not found in the CountryCode list:",
+                  countryCode
+                );
+              }
+            } catch (error) {
+              console.error("Failed to fetch country code:", error); // Log any error
+            }
+          },
+          (error) => {
+            console.error("Geolocation error:", error); // Log any geolocation error
+          }
+        );
+      } else {
+        console.warn("Geolocation is not supported by this browser.");
+      }
+    };
+
+    getCountryCode();
+  }, [setValue]);
+
+  // Update filteredCountries based on the search term
+  const handleSearch = (e) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+
+    const filtered = CountryCode.filter((country) =>
+      country.country.toLowerCase().includes(value.toLowerCase())
+    );
+    setFilteredCountries(filtered);
+  };
+
+  const handleCountryCodeSelect = (code) => {
+    setSelectedCountryCode(code);
+    setValue("dropdown", code);
+    setFilteredCountries(CountryCode);
+    setSearchTerm("");
+  };
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
+    setFormStatus({});
     const formData = {
       firstname: data.firstname,
       lastname: data.lastname,
       email: data.email,
-      companyName: "", // Set this to empty as it is not in the contact form
+      companyName: "",
       phoneno: data.phoneno,
-      countryCode: data.dropdown, // Using dropdown for country code
+      countryCode: data.dropdown,
       message: data.message,
-      formType: "contact", // Specify that this is a contact form
+      formType: "contact",
     };
 
     try {
       const response = await axios.post(DEMO_API_ROUTES.SAVE_QUERY, formData);
 
-      toast.success("Your message has been sent successfully!");
-      // Reset the form if needed
+      setFormStatus({
+        type: "success",
+        message: "Your message has been sent successfully!",
+      });
     } catch (error) {
       console.error("An error occurred while submitting the form.", error);
-      toast.error("An error occurred while sending your message.");
+      setFormStatus({
+        type: "error",
+        message: "An error occurred while sending your message.",
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -86,31 +159,43 @@ const ContactUsForm = () => {
         </div>
 
         {/* Phone Number */}
+
         <div className="form-div">
-          <div className="flex gap-3"> 
-          <select
-            {...register("dropdown", {
-              required: "Country code is required",
-            })}
-            className={`p-2  rounded  w-24 ${
-              errors.dropdown ? "border-red-500" : ""
-            }`}
-          >
-            {CountryCode.map((element, index) => (
-              <option key={index} value={element.code}>
-                {element.code} - {element.country}
-              </option>
-            ))}
-          </select>
-          <input
-            type="text"
-            {...register("phoneno", { required: "Phone number is required" })}
-            placeholder="12345 67890"
-            className={`p-2 rounded  ${errors.phoneno ? "border-red-500" : ""}`}
-          />
-          {errors.phoneno && (
-            <p className="text-red-500">{errors.phoneno.message}</p>
-          )}
+          <div className="flex gap-3">
+            <input
+              type="text"
+              value={selectedCountryCode}
+              onChange={(e) => handleSearch(e)} // Handle search input
+              placeholder="Country Code"
+              className={`p-2 rounded w-24 ${
+                errors.dropdown ? "border-red-500" : ""
+              }`}
+            />
+            {/* Dropdown for filtered countries */}
+            {searchTerm && (
+              <div className="absolute bg-white border border-gray-300 max-h-60 overflow-y-auto">
+                {filteredCountries.map((country, index) => (
+                  <div
+                    key={index}
+                    onClick={() => handleCountryCodeSelect(country.code)}
+                    className="p-2 cursor-pointer hover:bg-gray-200"
+                  >
+                    {country.code} - {country.country}
+                  </div>
+                ))}
+              </div>
+            )}
+            <input
+              type="text"
+              {...register("phoneno", { required: "Phone number is required" })}
+              placeholder="12345 67890"
+              className={`p-2 rounded ${
+                errors.phoneno ? "border-red-500" : ""
+              }`}
+            />
+            {errors.phoneno && (
+              <p className="text-red-500">{errors.phoneno.message}</p>
+            )}
           </div>
         </div>
 
@@ -121,9 +206,7 @@ const ContactUsForm = () => {
             cols="30"
             rows="5"
             placeholder="Enter Your message here"
-            className={`p-2 rounded  ${
-              errors.message ? "border-red-500" : ""
-            }`}
+            className={`p-2 rounded  ${errors.message ? "border-red-500" : ""}`}
           />
           {errors.message && (
             <p className="text-red-500">{errors.message.message}</p>
@@ -131,10 +214,24 @@ const ContactUsForm = () => {
         </div>
 
         {/* Submit Button */}
-        <div className="self-start">
-          <button className="btn-tab btn-base-color" disabled={isSubmitting}>
+        <div className="self-start  flex items-center gap-3">
+          <button
+            className="btn-tab btn-base-color  cursor-pointer"
+            disabled={isSubmitting}
+          >
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>
+          {formStatus && (
+            <span
+              className={`text-sm ${
+                formStatus.type === "success"
+                  ? "text-green-600"
+                  : "text-red-600"
+              }`}
+            >
+              {formStatus.message}
+            </span>
+          )}
         </div>
       </form>
     </div>

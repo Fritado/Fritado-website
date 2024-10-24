@@ -8,7 +8,141 @@ input, select, textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+.support-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: white;
+    padding: 1rem;
+    width:100%;
+    gap: 1rem;
+    box-sizing: border-box;
+    h2{
+        color: #023142;
+        font-size: 27px;
+        font-weight: bold;
+        line-height: 34px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    b{
+        color: #023142;      
+    }
+}
+.help-icon{
+    position:relative;
+    top:0px;
+    font-size:32px;
+    margin-right:0.25rem;
 
+  }
+  .help-center{
+text-decoration: underline;
+  }
+.chat-btn{
+    display: flex;
+    min-height: 48px;
+    border:2px solid #78aec2;
+    justify-content: center;
+    padding:0.75rem 1.5rem;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .chat-icon{
+        position:relative;
+        top:2px;
+        font-size: 20px;
+    }
+
+    .chat-button-inner{
+        display: flex;
+        gap:8px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.whatsapp-color{
+    color:#075E54;
+}
+.chat-color-btn{
+    background-color:#78aec2;
+    color:white;
+}
+.contact-support-card-left ,.contact-support-card-right{
+    padding:1.5rem;
+   
+}
+
+.contact-page {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+    gap:0.75rem;
+  }
+  .contact-support-card-right .d-flex {
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    gap: 1rem; /* Adjust gap between buttons */
+}
+
+.contact-support-card-right .chat-btn {
+    flex: 1 1 48%; /* Allow buttons to take up 48% of the width and wrap */
+}
+  /* Flex container adjustments for larger screens */
+@media (min-width: 768px) {
+    .support-card {
+        flex-direction: row; 
+        padding: 1.5rem;
+    }
+
+    .contact-support-card-left {
+        width: 50%; /* Adjust width to split */
+        border-right: 1px solid #0000001f;
+      
+    }
+
+    .contact-support-card-right {
+        width: 50%; /* Adjust width to split */
+    }
+}
+
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    background-color:white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; 
+    max-width: 400px;
+    height: 150px; 
+    overflow: hidden;
+  }
+  .content h3 {
+    margin: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .content p {
+    margin: 5px 0;
+    
+  }
+  @media (min-width: 768px) {
+    .contact-page {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact-card {
+        width: 30%; 
+    }
+}
 iframe {
     width: 100%;
     height: 300px; 

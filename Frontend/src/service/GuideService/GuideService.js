@@ -71,23 +71,29 @@ export const deleteGuide = async (blogId) => {
 export const updateGuide = async (guideId, guideData) => {
   const url = `${GUIDE_API_ROUTES.UPDATE_GUIDE}/${guideId}`;
   const formData = new FormData();
+
   formData.append("guideTopic", guideData.guideTopic);
   formData.append("guideCategory", guideData.guideCategory);
   formData.append("guideKeywords", guideData.guideKeywords);
   formData.append("guideDescription", guideData.guideDescription);
   formData.append("guideVideo", guideData.guideVideo);
-  formData.append("status", guideData.status || "Draft");
+  formData.append("status", guideData.status);
+  formData.append("guideImage", guideData.guideImage);
 
-  // Append the image if it exists
-  if (guideData.guideImage) {
-    formData.append("guideImage", guideData.guideImage);
-  }
+  // if (guideData.guideImage) {
+  //   formData.append(
+  //     "guideImage",
+  //     guideData.guideImage,
+  //     guideData.guideImage.name
+  //   );
+  // }
+  console.log("Updating  guide with data:", guideData);
 
   const response = await axios.put(url, formData, {
     headers: {
       "Content-Type": "multipart/form-data",
     },
   });
-
+  console.log(response, "guide");
   return response.data;
 };

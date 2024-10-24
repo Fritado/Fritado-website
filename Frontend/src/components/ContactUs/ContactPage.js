@@ -1,13 +1,15 @@
 import React from "react";
 import ContactUsForm from "./ContactUsForm";
 import { IoLocation, IoCall, IoMail } from "react-icons/io5";
+import ContactDetails from "./ContactDetails";
+import ContactUsPage from "./ContactUsPage";
 
 
 const ContactPage = () => {
   return (
     <div className="head-div">
-      <div className=" container demo-container  ">
-        {/* section1 */}
+      {/* <div className=" container demo-container  ">
+       
 
         <div className="d-flex flex-col contact-section-1">
         <div className="overlay"></div>
@@ -20,8 +22,8 @@ const ContactPage = () => {
               <h2>Address</h2>
             </div>
             <p className="demo-para ps-5 ">
-              {/* No. 8, CMH Road, 2nd Stage, Indiranagar,Bengaluru, Karnataka - 560
-              038 */}
+            USA : Office Address:
+            25623 Moreleigh Street, Katy, TEXAS - 77493 USA
             </p>
           </div>
           <div className="contact-detail-section my-3">
@@ -46,6 +48,10 @@ const ContactPage = () => {
           </div>
         </div>
         <ContactUsForm />
+      </div> */}
+<ContactUsPage />
+      <div>
+        <ContactDetails />
       </div>
     </div>
   );

@@ -41,7 +41,7 @@ const GuideModal = ({ onCloseModal, onGuideSave, guideToEdit }) => {
 
     // Ensure guideKeywords is an array if needed
     if (name === "guideKeywords") {
-      setGuideData({ ...guideData, guideKeywords: value.split(",") }); // Assuming comma-separated
+      setGuideData({ ...guideData, guideKeywords: value.split(",") });
     } else {
       setGuideData({ ...guideData, [name]: value });
     }
@@ -49,16 +49,17 @@ const GuideModal = ({ onCloseModal, onGuideSave, guideToEdit }) => {
 
   // Handle file input for image upload
   const handleFileChange = (e) => {
-    setGuideData({ ...guideData, guideImage: e.target.files[0] }); // Update guideImage in state
+    setGuideData({ ...guideData, guideImage: e.target.files[0] });
   };
 
   const handleSubmit = async (status) => {
     try {
+      const updatedGuideData = { ...guideData, status };
       let newGuide;
       if (guideToEdit) {
-        newGuide = await updateGuide(guideToEdit._id, { ...guideData, status });
+        newGuide = await updateGuide(guideToEdit._id, updatedGuideData);
       } else {
-        newGuide = await saveGuide({ ...guideData, status });
+        newGuide = await saveGuide(guideData, status);
       }
       onGuideSave(newGuide);
       onCloseModal();

@@ -12,7 +12,7 @@ const GuideSetting = () => {
   const [showModal, setShowModal] = useState(false);
   const [guide, setGuide] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [guideToEdit, setGuideToEdit] = useState(null); 
+  const [guideToEdit, setGuideToEdit] = useState(null);
 
   const handleCloseModal = () => {
     setShowModal(false);
@@ -20,8 +20,8 @@ const GuideSetting = () => {
   };
 
   const handleEditGuide = (guide) => {
-    setGuideToEdit(guide); // Set the guide to be edited
-    setShowModal(true); // Open the modal
+    setGuideToEdit(guide);
+    setShowModal(true);
   };
 
   useEffect(() => {
@@ -40,22 +40,18 @@ const GuideSetting = () => {
     getGuides();
   }, []);
 
-  // const handleGuideSave = (newGuide) => {
-  //   setGuide((prevGuide) => [newGuide, ...prevGuide]);
-  // };
-
   const handleGuideSave = (newGuide) => {
-    setGuide((prevGuide) => {
-      const index = prevGuide.findIndex((g) => g._id === newGuide._id);
-      if (index !== -1) {
-        // Update existing guide
-        const updatedGuides = [...prevGuide];
-        updatedGuides[index] = newGuide; // Replace the old guide with the new one
-        return updatedGuides;
-      }
-      // Add new guide
-      return [newGuide, ...prevGuide];
-    });
+    if (guideToEdit) {
+      console.log("Editing Guide:", guideToEdit); 
+      setGuide((prevGuide) =>
+        prevGuide.map((guide) =>
+          guide._id === newGuide._id ? newGuide : guide
+        )
+      );
+      setGuideToEdit(null);
+    } else {
+      setGuide((prevGuide) => [newGuide, ...prevGuide]);
+    }
   };
 
   const handleDeleteGuide = async (guideId) => {
@@ -75,7 +71,7 @@ const GuideSetting = () => {
       <div className="table-container">
         <div className="add-blog-btn">
           <span
-           className="d-flex btn-tab btn-base-color cursor-pointer"
+            className="d-flex btn-tab btn-base-color cursor-pointer"
             onClick={() => setShowModal(true)}
           >
             <span className="postion-relative bottom-8">
@@ -119,13 +115,13 @@ const GuideSetting = () => {
                     <td>{guide.publishedBy || "Unknown"}</td>
                     <td>{guide.status}</td>
                     <td>
-                    <div className="d-flex flex-row gap-2">
-                      <button onClick={() => handleEditGuide(guide)}>
-                        <MdEdit />
-                      </button>
-                      <button onClick={() => handleDeleteGuide(guide._id)}>
-                        <MdDelete />
-                      </button>
+                      <div className="d-flex flex-row gap-2">
+                        <button onClick={() => handleEditGuide(guide)}>
+                          <MdEdit />
+                        </button>
+                        <button onClick={() => handleDeleteGuide(guide._id)}>
+                          <MdDelete />
+                        </button>
                       </div>
                     </td>
                   </tr>
