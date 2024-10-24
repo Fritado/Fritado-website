@@ -13,7 +13,8 @@ const ContactUsPage = () => {
 
           <div className="my-3">
             <b>Contact our support team</b>
-            <p>+(91)-974-1156-389</p>
+            <p>USA +1 667-240-7940 </p>
+            <p>India +91 974-115-6389 </p>
             <p>Everyday 9:00 am - 7:00 pm.</p>
           </div>
           <div className="my-3">

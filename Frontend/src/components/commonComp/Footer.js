@@ -19,7 +19,7 @@ const FooterFour = () => {
         <div className="container-fluid px-5">
           <div className="row">
             <div className="col-lg-4 col-md-6">
-              <div className="my-3">
+              <div className="">
                 <img
                   src={"/assets/img/logo-white.png"}
                   style={{ width: "180px" }}
@@ -28,16 +28,16 @@ const FooterFour = () => {
               </div>
               <div className="widget widget-recent-post">
                 <div className="widget widget_contact">
-                  <ul className="details">
+                  {/* <ul className="details">
                     <li className="d-flex position-relative">
                       <span className="li-icon">
-                        <FaMapMarkerAlt className="sky" />
-                        25623 Moreleigh Street, Katy, TEXAS - 77493 USA
+                        <FaPhoneAlt className="sky" />USA +1 667-240-7940
                       </span>
                     </li>
                     <li className="mt-3 d-flex position-relative">
                       <span className="li-icon">
-                        <FaPhoneAlt className="sky" /> +(91)-974-1156-389
+                      
+                       India +91 974-115-6389 
                       </span>
                     </li>
                     <li className="mt-2 d-flex position-relative">
@@ -45,7 +45,16 @@ const FooterFour = () => {
                         <FaEnvelope className="sky" /> support@fritado.com{" "}
                       </span>
                     </li>
-                  </ul>
+                  </ul> */}
+                  <p className="text-white py-2">
+                    In a digital age where visibility and reach are key to
+                    business success, Fritado offers an AI-driven approach that
+                    simplifies and enhances SEO processes, making it easier for
+                    companies to grow online. With a comprehensive platform that
+                    automates up to 90% of SEO tasks and a variety of
+                    complementary services, Fritado not only empowers businesses
+                    but also helps shape the future of digital marketing.
+                  </p>
                   <ul className="social-media mt-4">
                     <li className="">
                       <a
